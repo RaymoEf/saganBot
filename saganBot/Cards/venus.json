@@ -1,0 +1,103 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "Medium",
+                                    "weight": "Bolder",
+                                    "text": "Venus"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "size": "Medium",
+                                    "horizontalAlignment": "Center",
+                                    "url": "https://spaceplace.nasa.gov/review/all-about-venus/Venus_Clouds_br.sp.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "Características",
+                            "isSubtle": true,
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Con un tamaña 1.1 veces mas pequeño de la tierra",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "El segundo mas cercano al sol (108 millones Km)",
+            "wrap": true
+        },
+        {
+            "text": "Al igual que la Tierra y Marte se encuentra en la zona habitable del sistema solar",
+            "type": "TextBlock",
+            "wrap": true
+        },
+        {
+            "facts": [
+                {
+                    "title": "Días ",
+                    "value": "243 Dias terrestres"
+                },
+                {
+                    "title": "Año",
+                    "value": "225 dias"
+                },
+                {
+                    "title": "Temperatura",
+                    "value": "465º C"
+                }
+            ],
+            "type": "FactSet"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "url": "https://spaceplace.nasa.gov/planets/sp/",
+                    "title": "Saber más",
+                    "style": "destructive"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}

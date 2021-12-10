@@ -1,0 +1,87 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "Medium",
+                  "weight": "Bolder",
+                  "text": "Proxima Centauri"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "Image",
+                  "size": "Medium",
+                  "horizontalAlignment": "Center",
+                  "url": "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/59fc53375bafe81ff4387674/proxima_0.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "spacing": "None",
+              "text": "Características",
+              "isSubtle": true,
+              "wrap": true,
+              "size": "Medium"
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "enana roja encontrada a 0.2 años luz del sistema Alpha Centauri A+B y la estrella mas cercana al sistema solar",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Pertenece al sistema ternario Alpha Centauri, el mas cercano al sistema solar ubicado a 4.3 años luz",
+      "wrap": true
+    },
+    {
+      "facts": [
+        {
+          "title": "Masa",
+          "value": "2,445 × 10^29 kg"
+        },
+        {
+          "title": "Temperatura",
+          "value": "2768.85 ºC"
+        },
+        {
+          "title": "Planetas",
+          "value": "Proximaa Centauri b"
+        }
+      ],
+      "type": "FactSet"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}

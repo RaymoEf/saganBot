@@ -1,0 +1,102 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "Medium",
+                                    "weight": "Bolder",
+                                    "text": "Neptuno"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "size": "Medium",
+                                    "horizontalAlignment": "Center",
+                                    "url": "https://spaceplace.nasa.gov/review/all-about-neptune/neptune1.sp.jpg"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "spacing": "None",
+                            "text": "Características",
+                            "isSubtle": true,
+                            "wrap": true,
+                            "size": "Medium"
+                        }
+                    ],
+                    "width": "stretch"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "3.9 veces mas grande que la Tierra",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "a 4.5 mil millones Km, la luz del sol tarda 248 minutos en llegar al planeta",
+            "wrap": true
+        },
+        {
+            "facts": [
+                {
+                    "title": "Días ",
+                    "value": "16 hrs"
+                },
+                {
+                    "title": "Año",
+                    "value": "165 años"
+                },
+                {
+                    "title": "Satelites",
+                    "value": "14"
+                },
+                {
+                    "title": "Anillos",
+                    "value": "al menos 5 principales"
+                }
+            ],
+            "type": "FactSet"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "url": "https://spaceplace.nasa.gov/planets/sp/",
+                    "title": "Saber más",
+                    "style": "destructive"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}

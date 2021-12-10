@@ -1,0 +1,92 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "Medium",
+                  "weight": "Bolder",
+                  "text": "Betelgeuse"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "Image",
+                  "size": "Medium",
+                  "horizontalAlignment": "Center",
+                  "url": "data:image/jpeg;base64,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"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "spacing": "None",
+              "text": "Características",
+              "isSubtle": true,
+              "wrap": true,
+              "size": "Medium"
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Super gigante roja ubicada en la constelación de Orión, la mas brillante en el cielo y visible a simple vista",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Se cree que pronto podría explotar en supernova, pues reciente mente perdió luminosidad ",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Aunque en términos astronómicos pronto podria ser hoy o en 100,000 años",
+      "wrap": true
+    },
+    {
+      "facts": [
+        {
+          "title": "Masa",
+          "value": "entre 18 y 19 masas solares"
+        },
+        {
+          "title": "Temperatura",
+          "value": "3226.85 ºC"
+        },
+        {
+          "title": "Distancia",
+          "value": "643 años luz aprox"
+        }
+      ],
+      "type": "FactSet"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}

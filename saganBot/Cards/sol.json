@@ -1,0 +1,91 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "Medium",
+                  "weight": "Bolder",
+                  "text": "Sol"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "Image",
+                  "size": "Medium",
+                  "horizontalAlignment": "Center",
+                  "url": "https://www.rockandpop.cl/wp-content/uploads/2020/05/ebdd4ded219a3f18a920b72f88482c77-400x360.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "spacing": "None",
+              "text": "Características",
+              "isSubtle": true,
+              "wrap": true,
+              "size": "Medium"
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Es una enana amarilla ubicada al centro del sistema solar",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Fusiona Helio en Hidrógeno lo que emite su energía y luminosidad",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Representa el 98% de la masa del sistemas solar"
+    },
+    {
+      "facts": [
+        {
+          "title": "Edad",
+          "value": "4,600 millones de años"
+        },
+        {
+          "title": "Masa",
+          "value": "1,9891 × 10^30 kg"
+        },
+        {
+          "title": "Temperatura",
+          "value": "5505ºC"
+        }
+      ],
+      "type": "FactSet"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}

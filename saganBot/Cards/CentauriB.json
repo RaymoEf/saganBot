@@ -1,0 +1,87 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "Medium",
+                  "weight": "Bolder",
+                  "text": "Alpha Centauri B"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "Image",
+                  "size": "Medium",
+                  "horizontalAlignment": "Center",
+                  "url": "https://www.cosmonoticias.org/wp-content/uploads/2013/06/alfa-centauri-bb.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "spacing": "None",
+              "text": "Características",
+              "isSubtle": true,
+              "wrap": true,
+              "size": "Medium"
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Enana naranja ligada a Alpha Centauri A",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "Pertenece al sistema ternario Alpha Centauri, el mas cercano al sistema solar ubicado a 4.3 años luz",
+      "wrap": true
+    },
+    {
+      "facts": [
+        {
+          "title": "Masa",
+          "value": "1,789 × 10^30 kg"
+        },
+        {
+          "title": "Temperatura",
+          "value": "4986.85 ºC"
+        },
+        {
+          "title": "Planetas",
+          "value": "Alpha Centauri Bb"
+        }
+      ],
+      "type": "FactSet"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}
