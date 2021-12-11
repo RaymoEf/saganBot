@@ -1,12 +1,29 @@
-## Welcome to GitHub Pages
+# Sagan Bot
 
-You can use the [editor on GitHub](https://github.com/RaymoEf/saganBot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Un chat bot sobre astronomía creado con [Microsoft Bot Framework](https://dev.botframework.com/) capaz de enviar información a través de tarjetas y calcular edad relativa en otros planetas utilizando date time recognizer
 
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+![Inicio del bot](https://imgur.com/sydtUbp)
+
+```
+public static HeroCard GetWelcomeHeroCard()
+        {
+            var heroCard = new HeroCard
+            {
+                Title = "Sagan Bot",
+                Subtitle = "El Bot de astronomia",
+                Text = " Bienvenido(a). Estoy aqui para enseñarte un poco de astronomia",
+                Images = new List<CardImage> { new CardImage("imagenInicio") },
+                Buttons = new List<CardAction> { new CardAction(ActionTypes.MessageBack, "Enseñame", value: "Empezar") },
+            };
+
+            return heroCard;
+        }
+```
+
 
 ```markdown
 Syntax highlighted code block
