@@ -2,13 +2,14 @@
 
 Un chat bot sobre astronomía creado con [Microsoft Bot Framework](https://dev.botframework.com/) capaz de enviar información a través de tarjetas y calcular edad relativa en otros planetas utilizando date time recognizer
 
-### Markdown
+### Capturas del Bot
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Algunas capturas del bot con algunos fragmentos de código dados para contextualizar el funcionamiento de este
 
-![Inicio del bot](https://imgur.com/sydtUbp)
+![Inicio del bot](https://i.imgur.com/sydtUbp.png)
 
-```
+
+```C#
 public static HeroCard GetWelcomeHeroCard()
         {
             var heroCard = new HeroCard
@@ -24,23 +25,34 @@ public static HeroCard GetWelcomeHeroCard()
         }
 ```
 
+![Opciones](https://i.imgur.com/N8Hpgxe.png)
 
-```markdown
-Syntax highlighted code block
+```C#
+new PromptOptions
+                  {
+                      Prompt = MessageFactory.Text("¿Qué quieres aprender hoy?"), //Frase inicial de la pregunta
+                      RetryPrompt = MessageFactory.Text("No entendi eso.  Por favor elija una opción de la lista."), //en caso de elegir una pcion inexistente se encia este mensaje
+                      Choices = GetChoices(), //opciones
+                  }, cancellationToken);
+                  
 
-# Header 1
-## Header 2
-### Header 3
+```            
 
-- Bulleted
-- List
+```C#
+ private IList<Choice> GetChoices()
+        {
+            var Options = new List<Choice>()
+            {
+                new Choice() { Value = "Estrellas", Synonyms = new List<string>() { "Quiero conocer las estrellas","Algo sobre las estrellas", "Cuentame sobre las estrellas" } },
+                new Choice() { Value = "Planetas", Synonyms = new List<string>() { "Algo sobre los planetas","Cuentame sobre los planetas" } },
+                new Choice() { Value = "Calculadora de edad", Synonyms = new List<string>() { "Quiero calcular mi edad", "mi edad en otro planeta","conocer mi edad en otro planeta", "Calcular mi edad" } },
+                new Choice() { Value = "Universo", Synonyms = new List<string>() { "Quiero conocer el universo", "Sobre el universo","Cuentame sobre el universo" } },
+                new Choice() { Value = "Cancelar", Synonyms = new List<string>() { "Atras","Adios","Volver" } },
+            };
 
-1. Numbered
-2. List
+            return Options;
+        }
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
