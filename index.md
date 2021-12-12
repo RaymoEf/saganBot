@@ -9,7 +9,7 @@ Algunas capturas del bot con algunos fragmentos de código dados para contextual
 ![Inicio del bot](https://i.imgur.com/sydtUbp.png)
 
 
-```C#
+```Java
 public static HeroCard GetWelcomeHeroCard()
         {
             var heroCard = new HeroCard
