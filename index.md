@@ -9,7 +9,7 @@ Algunas capturas del bot con algunos fragmentos de código dados para contextual
 ### Inicio del bot con tarjeta de bienvenida
 ![Inicio del bot](https://i.imgur.com/sydtUbp.png)
 
-```C#
+```c#
 public static HeroCard GetWelcomeHeroCard()
         {
             var heroCard = new HeroCard
@@ -29,7 +29,7 @@ public static HeroCard GetWelcomeHeroCard()
 ![Opciones](https://i.imgur.com/N8Hpgxe.png)
 
 
-```C#
+```c#
 new PromptOptions
                   {
                       Prompt = MessageFactory.Text("¿Qué quieres aprender hoy?"), //Frase inicial de la pregunta
@@ -38,7 +38,7 @@ new PromptOptions
                   }, cancellationToken);
 ```            
 
-```C#
+```c#
  private IList<Choice> GetChoices()
         {
             var Options = new List<Choice>()
@@ -58,7 +58,7 @@ new PromptOptions
 
 ![Estrellas B](https://i.imgur.com/Xp3JPDU.png)
 Con cada selección se retiran las opciones ya elegidas
-```C#
+```c#
 public estrellas(): base(nameof(estrellas))
         {
             AddDialog(new ChoicePrompt(nameof(ChoicePrompt))); //El Dialogo de las opciones
@@ -72,7 +72,8 @@ public estrellas(): base(nameof(estrellas))
             InitialDialogId = nameof(WaterfallDialog);
         }
 ```
-```C#
+
+```c#
  //Creamos el mensaje con las opciones dadas a el usuario
             var promptOptions = new PromptOptions
             {
@@ -92,7 +93,7 @@ El resto del código y su funcionamiento es extenso, pero puede verse [aqui](htt
 
 ![Edad C](https://i.imgur.com/cwo7N1w.png)
 
-```C#
+```c#
  private static bool ValidateDate(string input, out string date, out string message)
         {
             
@@ -135,7 +136,7 @@ El resto del código y su funcionamiento es extenso, pero puede verse [aqui](htt
 ``` 
 Validar fecha dada al bot por medio del DateTime Recognizer
 
-```C#
+```c#
  private async Task<DialogTurnResult> fechaConfirmStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             await stepContext.Context.SendActivitiesAsync(
@@ -152,3 +153,11 @@ Validar fecha dada al bot por medio del DateTime Recognizer
 Pide comfirmación de la fecha       
 
 De nuevo, el código completo es extenso, por lo que se puede encontrar [aqui](https://github.com/RaymoEf/saganBot/blob/master/saganBot/Dialogs/calcularEdad.cs)
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
