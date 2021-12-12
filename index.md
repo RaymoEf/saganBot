@@ -149,6 +149,6 @@ Validar fecha dada al bot por medio del DateTime Recognizer
 
         }
 ``` 
-Pide confrimación de la fecha       
+Pide comfrimación de la fecha       
 
 De nuevo, el código completo es extenso, por lo que se puede encontrar [aqui](https://github.com/RaymoEf/saganBot/blob/master/saganBot/Dialogs/calcularEdad.cs)
