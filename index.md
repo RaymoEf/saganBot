@@ -9,7 +9,8 @@ Algunas capturas del bot con algunos fragmentos de código dados para contextual
 ![Inicio del bot](https://i.imgur.com/sydtUbp.png)
 
 
-```Java
+```C#
+
 public static HeroCard GetWelcomeHeroCard()
         {
             var heroCard = new HeroCard
@@ -23,22 +24,24 @@ public static HeroCard GetWelcomeHeroCard()
 
             return heroCard;
         }
+        
 ```
 
 ![Opciones](https://i.imgur.com/N8Hpgxe.png)
 
 ```C#
+
 new PromptOptions
                   {
                       Prompt = MessageFactory.Text("¿Qué quieres aprender hoy?"), //Frase inicial de la pregunta
                       RetryPrompt = MessageFactory.Text("No entendi eso.  Por favor elija una opción de la lista."), //en caso de elegir una pcion inexistente se encia este mensaje
                       Choices = GetChoices(), //opciones
                   }, cancellationToken);
-                  
 
 ```            
 
 ```C#
+
  private IList<Choice> GetChoices()
         {
             var Options = new List<Choice>()
