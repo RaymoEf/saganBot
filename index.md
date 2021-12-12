@@ -153,11 +153,3 @@ Validar fecha dada al bot por medio del DateTime Recognizer
 Pide comfirmación de la fecha       
 
 De nuevo, el código completo es extenso, por lo que se puede encontrar [aqui](https://github.com/RaymoEf/saganBot/blob/master/saganBot/Dialogs/calcularEdad.cs)
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
