@@ -1,6 +1,6 @@
 # Sagan Bot
 
-Un chat bot sobre astronomía creado con [Microsoft Bot Framework](https://dev.botframework.com/) capaz de enviar información a través de tarjetas y calcular edad relativa en otros planetas utilizando date time recognizer
+Un chat bot sobre astronomía creado con [Microsoft Bot Framework](https://dev.botframework.com/) capaz de enviar información a través de tarjetas y calcular edad relativa en otros planetas utilizando [Text recognizer](https://github.com/microsoft/Recognizers-Text)
 
 ### Capturas del Bot
 
@@ -10,7 +10,6 @@ Algunas capturas del bot con algunos fragmentos de código dados para contextual
 
 
 ```C#
-
 public static HeroCard GetWelcomeHeroCard()
         {
             var heroCard = new HeroCard
@@ -24,24 +23,21 @@ public static HeroCard GetWelcomeHeroCard()
 
             return heroCard;
         }
-        
+       
 ```
 
 ![Opciones](https://i.imgur.com/N8Hpgxe.png)
 
 ```C#
-
 new PromptOptions
                   {
                       Prompt = MessageFactory.Text("¿Qué quieres aprender hoy?"), //Frase inicial de la pregunta
-                      RetryPrompt = MessageFactory.Text("No entendi eso.  Por favor elija una opción de la lista."), //en caso de elegir una pcion inexistente se encia este mensaje
+                      RetryPrompt = MessageFactory.Text("No entendi eso.  Por favor elija una opción de la lista."), //en caso de seleccionar una opcion inexistente se envia este mensaje
                       Choices = GetChoices(), //opciones
                   }, cancellationToken);
-
 ```            
 
 ```C#
-
  private IList<Choice> GetChoices()
         {
             var Options = new List<Choice>()
@@ -55,15 +51,8 @@ new PromptOptions
 
             return Options;
         }
-
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+![Estrellas A](https://i.imgur.com/7SCGjvN.png)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RaymoEf/saganBot/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![Estrellas B](https://i.imgur.com/Xp3JPDU.png)
